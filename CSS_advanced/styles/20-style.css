@@ -405,7 +405,7 @@ body {
     line-height: var(--line-height-base);
 }
 
-a[href] {
+a:link {
     color: var(--text-color);
     text-decoration: none;
 }
@@ -440,7 +440,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: var(--section-header-padding);
 }
 
-.section body {
+.section-body {
     padding: var(--section-body-padding);
 }
 .section-footer {
@@ -521,13 +521,19 @@ ul.row {
 }
 
 .footer-copyright {
-    margin: none;
+    margin: 0;
     font-size: var(--font-size-small);
     color: var(--text-color);
 }
 
 .footer ul {
     text-align: right;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .footer {
