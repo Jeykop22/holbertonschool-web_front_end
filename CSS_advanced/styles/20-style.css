@@ -530,12 +530,6 @@ ul.row {
     text-align: right;
 }
 
-.row::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 .footer {
     padding: var(--footer-padding);
 }
