@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: var(--section-header-align);
 }
 
-.card-category {
+.card-category, .section-tagline {
     color: var(--color-primary);
 }
 
